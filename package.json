@@ -2,6 +2,11 @@
   "name": "BetterYoutube",
   "version": "1.0.0",
   "main": "main.js",
+  "description": "A Better Youtube desktop client built with electron.",
+  "author": {
+    "name": "pixelated11",
+    "email": "itspixelatd@proton.me"
+  },
   "scripts": {
     "start": "electron .",
     "build:linux": "electron-builder --linux",
@@ -9,7 +14,8 @@
     "build:all": "electron-builder --linux --win"
   },
   "dependencies": {
-    "@ghostery/adblocker-electron": "^2.0.0"
+    "@ghostery/adblocker-electron": "^2.0.0",
+    "node-fetch": "^3.0.0"
   },
   "devDependencies": {
     "electron": "^41.0.0",
@@ -26,12 +32,17 @@
       "extensions/"
     ],
     "linux": {
-      "target": ["AppImage", "deb"],
+      "target": [
+        "AppImage",
+        "deb"
+      ],
       "category": "Network"
     },
     "win": {
-      "target": ["nsis", "portable"]
+      "target": [
+        "nsis",
+        "portable"
+      ]
     }
   }
 }
-
