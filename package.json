@@ -1,20 +1,37 @@
 {
-  "name": "youtube-client",
-  "version": "0.1.1",
-  "description": "Simple youtube client for desktop.",
-  "license": "GPL-3.0",
-  "author": "pixelated11",
-  "type": "commonjs",
+  "name": "your-app-name",
+  "version": "1.0.0",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "electron": "^41.1.0"
+    "build:linux": "electron-builder --linux",
+    "build:windows": "electron-builder --win",
+    "build:all": "electron-builder --linux --win"
   },
   "dependencies": {
-    "@ghostery/adblocker-electron": "^2.14.1",
-    "cross-fetch": "^4.1.0"
+    "@ghostery/adblocker-electron": "^1.x.x"
+  },
+  "devDependencies": {
+    "electron": "^41.0.0",
+    "electron-builder": "^latest"
+  },
+  "build": {
+    "appId": "com.pixelated.ytelectron",
+    "productName": "YouTube Client",
+    "files": [
+      "main.js",
+      "index.html",
+      "preload.js",
+      "scripts/",
+      "extensions/"
+    ],
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Network"
+    },
+    "win": {
+      "target": ["nsis", "portable"]
+    }
   }
+}
 }
