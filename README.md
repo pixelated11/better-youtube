@@ -30,3 +30,14 @@ npm run build:linux
 ```
 npm run build:windows
 ```
+
+## Running it directly
+If you want to run the app directly, without building anything, simply run:
+```
+npm run start
+```
+To start the application. Run this in the repository directory.
+
+## Contributing
+Contributions are always welcome. Don't hestitate to contact me at itspixelatd@proton.me
+Consider starring the repo!
