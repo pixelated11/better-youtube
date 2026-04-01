@@ -24,6 +24,10 @@
   "build": {
     "appId": "com.pixelated.betteryoutube",
     "productName": "BetterYoutube",
+    "electronDownload": {
+    	"mirror": "https://github.com/castlabs/electron-releases/releases/download/"
+    
+    },
     "files": [
       "main.js",
       "index.html",
