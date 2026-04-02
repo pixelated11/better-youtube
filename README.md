@@ -9,7 +9,7 @@ Supports Windows, Linux AppImage, and Debian installer.
 You can download binaries from the releases page in this repository.
 
 ## Documentation
-For build guides, consult to the [documentation website](https://pixelated11.github.io/betteryt-docs/site/index.html) that I made.
+For build guides, consult to the [documentation](https://pixelated11.github.io/betteryt-docs/) that I made.
 ## Contributing
 Contributions are always welcome. Don't hestitate to contact me at itspixelatd@proton.me
 Consider starring the repo!
